@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Contact</title>
+    <link href="../breadcrumbs.css" rel="stylesheet" />
+    <link href="./contact.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header-included").load("../../header/header.html");
+        $("#footer-included").load("../../footer/footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header-included"></div>
+    <div class="breadcrumbs">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-item">
+          <a href="#" class="breadcrumb-link">
+            <svg
+              class="svg"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#" class="breadcrumb-link is-active"> Contact </a>
+        </li>
+      </ul>
+    </div>
+    <div class="contact-section section">
+      <div class="location-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.193525980286!2d-74.14942804950053!3d40.71375604534456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzQ5LjUiTiA3NMKwMDgnNTAuMCJX!5e0!3m2!1svi!2s!4v1614072793253!5m2!1svi!2s"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+        ></iframe>
+      </div>
+      <div class="contact-container">
+        <div class="contact-title">
+          <p>Contact us</p>
+        </div>
+        <div class="contact-list">
+          <div class="contact-item">
+            <p class="contact-label">Our location</p>
+            <p class="contact-content">
+              Newark Public Schools, Newark, New Jersey, Hoa Kỳ
+            </p>
+          </div>
+          <div class="contact-item">
+            <p class="contact-label">Our email</p>
+            <p class="contact-content">minttran.9002@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <p class="contact-label">Phone</p>
+            <p class="contact-content">0799043758</p>
+          </div>
+          <div class="contact-item">
+            <p class="contact-label">Available</p>
+            <p class="contact-content">9am - 22pm</p>
+          </div>
+        </div>
+        <div class="send-contact-box">
+            <div class="send-contact-title">
+                <p>Tell Us Your Project</p>
+            </div>
+            <div class="send-contact-form">
+                <div class="input-group">
+                    <div class="input-wrap">
+                        <input type="text" placeholder="Your name">
+                        <div class="input-line"></div>
+                    </div>
+                </div>
+                <div class="input-group">
+                   <div class="input-wrap">
+                    <input type="text" placeholder="Your email">
+                    <div class="input-line"></div>
+
+                   </div>
+                   <div class="input-wrap">
+                    <input type="text" placeholder="Phone number">
+                    <div class="input-line"></div>
+
+                   </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-wrap">
+                        <textarea type="text" placeholder="Your name"></textarea>
+                        <div class="input-line"></div>
+                    </div>
+                </div>
+                <button>Submit</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-included"></div>
+  </body>
+</html>

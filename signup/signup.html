@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>About</title>
+    <link href="../breadcrumbs.css" rel="stylesheet" />
+    <link href="./signup.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header-included").load("../../header/header.html");
+        $("#footer-included").load("../../footer/footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header-included"></div>
+    <div class="breadcrumbs">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-item">
+          <a href="#" class="breadcrumb-link">
+            <svg
+              class="svg"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#" class="breadcrumb-link is-active"> About </a>
+        </li>
+      </ul>
+    </div>
+    <div class="signup-section section">
+        <div class="signup-title">
+            <p>Register</p>
+            <span>Join with us</span>
+        </div>
+        <div class="signup-form form">
+                <div class="input-group">
+                    <div class="input-wrap">
+                        <input type="email" required placeholder="Your name"></input>
+                        <div class="input-line"></div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-wrap">
+                        <input type="email" required placeholder="Your email"></input>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="email" required placeholder="Your phone"></input>
+                        <div class="input-line"></div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-wrap">
+                        <input type="email" required placeholder="Address"></input>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="email" required placeholder="Country"></input>
+                        <div class="input-line"></div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div class="input-wrap">
+                        <input type="password" required placeholder="Password"></input>
+                        <div class="input-line"></div>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="password" required placeholder="Confirm"></input>
+                        <div class="input-line"></div>
+                    </div>
+                </div>
+                <div class="signup-btn">
+                  <button>Register</button>
+                  
+                </div>
+        </div>
+    </div>
+    <div id="footer-included"></div>
+  </body>
+</html>

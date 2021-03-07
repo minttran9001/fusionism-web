@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Account</title>
+    <link href="../breadcrumbs.css" rel="stylesheet" />
+    <link href="./account.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header-included").load("../../header/header.html");
+        $("#footer-included").load("../../footer/footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header-included"></div>
+    <div class="breadcrumbs">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-item">
+          <a href="#" class="breadcrumb-link">
+            <svg
+              class="svg"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#" class="breadcrumb-link is-active"> Account </a>
+        </li>
+      </ul>
+    </div>
+    <div class="account-section section">
+      <div class="account-tab-menu">
+        <ul class="tab-list">
+          <li onclick="changeMenu(0)" class="tab-item selected">
+            <p><i class="fas fa-tachometer-alt"></i> Dashboard</p>
+          </li>
+          <li onclick="changeMenu(1)" class="tab-item">
+            <p><i class="fas fa-cart-arrow-down"></i> Orders</p>
+          </li>
+          <li onclick="changeMenu(2)" class="tab-item">
+            <p><i class="far fa-credit-card"></i> Payment method</p>
+          </li>
+          <li onclick="changeMenu(3)" class="tab-item">
+            <p><i class="fas fa-map-marker-alt"></i> Address</p>
+          </li>
+          <li onclick="changeMenu(4)" class="tab-item">
+            <p><i class="fas fa-user"></i> Account details</p>
+          </li>
+          <li  class="tab-item">
+            <p><i class="fas fa-sign-out-alt"></i> <a href="../login/login.html" class="log-out">Log out</a></p>
+          </li>
+        </ul>
+      </div>
+      <div class="account-container">
+        <div class="account-dashboard account-content selected">
+          <div class="account-content-title">
+            <p>Dashboard</p>
+          </div>
+          <div class="account-content-content">
+            <p>
+              Hello, <span>Erik Jhonson</span> (If Not <span>Jhonson</span> !
+              <a href="#">Logout</a>)
+            </p>
+            <p>
+              From your account dashboard. you can easily check & view your
+              recent orders, manage your shipping and billing addresses and edit
+              your password and account details.
+            </p>
+          </div>
+        </div>
+        <div class="account-orders account-content ">
+          <div class="account-content-title">
+            <p>Orders</p>
+          </div>
+          <div class="account-content-content">
+            <table class="order-table">
+                <thead>
+                  <tr>
+                    <th>
+                      Order
+                    </th>
+                    <th>
+                      Date
+                    </th>
+                    <th>
+                      Status
+                    </th>
+                    <th>
+                      Total
+                    </th>
+                    <th>
+                      Action
+                    </th>
+                  </tr>
+                </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    1
+                  </td>
+                  <td>
+                    Aug 22, 2021
+                  </td>
+                  <td>
+                    Pending
+                  </td>
+                  <td>
+                    $30.00
+                  </td>
+                  <td>
+                    <button>View</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    2
+                  </td>
+                  <td>
+                    Aug 22, 2021
+                  </td>
+                  <td>
+                    Pending
+                  </td>
+                  <td>
+                    $30.00
+                  </td>
+                  <td>
+                    <button>View</button>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    3
+                  </td>
+                  <td>
+                    Aug 22, 2021
+                  </td>
+                  <td>
+                    Pending
+                  </td>
+                  <td>
+                    $30.00
+                  </td>
+                  <td>
+                    <button>View</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+        </div>
+        <div class="account-payment account-content ">
+          <div class="account-content-title">
+            <p>Payment method</p>
+          </div>
+          <div class="account-content-content">
+            <p class="saved-message">
+              You Can't Saved Your Payment Method yet.
+            </p>
+          </div>
+        </div>
+        <div class="account-address account-content">
+          <div class="account-content-title">
+            <p>Billing address</p>
+          </div>
+          <div class="account-content-content">
+            <p class="name">Erik Jhonson</p>
+            <p class="address-1">1355 Market St, Suite 900</p>
+            <p class="address-2">San Francisco, CA 94103  </p>
+            <p class="mobile">Mobile: (123) 456-7890            </p>
+            <button><i class="far fa-edit"></i> Edit</button>
+          </div>
+        </div>
+        <div class="account-details account-content ">
+          <div class="account-content-title">
+            <p>Account Details</p>
+          </div>
+          <div class="account-content-content">
+            <div class="content-details">
+              <div class="input-group">
+                <div class="input-wrap">
+                  <input type="text" placeholder="First Name">
+                  <div class="input-line"></div>
+                </div>
+                <div class="input-wrap">
+                  <input type="text" placeholder="Last Name">
+                  <div class="input-line"></div>
+                </div>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="input-wrap">
+                <input type="text" placeholder="Display Name">
+                <div class="input-line"></div>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="input-wrap">
+                <input type="email" placeholder="Your Email">
+                <div class="input-line"></div>
+              </div>
+            </div>
+          </div>
+          <div class="account-content-title change-password">
+            <p>Change password</p>
+          </div>
+          <div class="account-content-content">
+            <div class="content-details">
+              <div class="input-group">
+                <div class="input-wrap">
+                  <input type="password" placeholder="Current Password">
+                  <div class="input-line"></div>
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-wrap">
+                  <input type="password" placeholder="New Password">
+                  <div class="input-line"></div>
+                </div>
+                <div class="input-wrap">
+                  <input type="password" placeholder="Confirm Password">
+                  <div class="input-line"></div>
+                </div>
+              </div>
+              <button>Save Changes</button>
+
+            </div>
+                        
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="footer-included"></div>
+    <script type="text/javascript" src="./account.js"></script>
+  </body>
+</html>

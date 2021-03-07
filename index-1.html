@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <link href="index.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+  </script>
+  <script>
+    $(function () {
+      $("#header-included").load("./header/header.html");
+      $("#footer-included").load("./footer/footer.html");
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <!---Nav bar section --->
+    <div id="header-included"></div>
+    <!-- End nav bar section -->
+
+    <!-- Hero section -->
+    <div class="hero" id="home">
+      <div class="hero-container">
+        <div class="hero-text">
+          <div class="text-wrapper is-active" id="slide-1">
+            <p class="hero-headline">Responsibilty</p>
+            <h1 class="hero-heading">Choose your <span>styles</span></h1>
+            <p class="hero-description">Is our honor</p>
+            <button class="main-btn">
+              <a href=""> Explore </a>
+            </button>
+          </div>
+          <div class="text-wrapper" id="slide-2">
+            <p class="hero-headline">Accessories</p>
+
+            <h1 class="hero-heading">Mini Bag <span>/ Backback</span></h1>
+            <p class="hero-description">now available</p>
+            <button class="main-btn">
+              <a href=""> Shop now </a>
+            </button>
+          </div>
+        </div>
+        <div class="hero-img">
+          <div class="img-wrapper slide-1 is-active">
+            <img src="./images/banner_balo_0e1445c28eea44beb31ca2986d7e6c8c.png" alt="hero" class="first-img" />
+          </div>
+          <div class="img-wrapper slide-2">
+            <img src="./images/yiyiyayaclub_banner_8d0599fbc5f04ccba9d6fc2748a29e43.png" alt="hero" class="first-img" />
+          </div>
+        </div>
+        <div class="slide-swipe">
+          <div class="swipe is-active" onclick="swipeSlideshow(0)"></div>
+          <div class="swipe" onclick="swipeSlideshow(1)"></div>
+        </div>
+      </div>
+    </div>
+    <div class="service-policy">
+      <div class="policy">
+        <div class="policy-img">
+          <img src="./images/free_shipping.png" alt="">
+        </div>
+        <p class="policy-title">
+          FREE SHIPPING
+        </p>
+        <p class="policy-description">
+          Freeship for all order over $50
+        </p>
+      </div>
+      <div class="policy">
+        <div class="policy-img">
+          <img src="./images/support247.png" alt="">
+        </div>
+        <p class="policy-title">
+          SUPPORT 24 HOURS A DAY
+        </p>
+        <p class="policy-description">
+          We are always available for serving you
+        </p>
+      </div>
+      <div class="policy">
+        <div class="policy-img">
+          <img src="./images/money_back.png" alt="">
+        </div>
+        <p class="policy-title">
+          MONEY RETURN
+        </p>
+        <p class="policy-description">
+          You can return money in 30days
+        </p>
+      </div>
+      <div class="policy">
+        <div class="policy-img">
+          <img src="./images/promotions.png" alt="">
+        </div>
+        <p class="policy-title">
+          ORDER DISCOUNT
+        </p>
+        <p class="policy-description">
+          Discount all order over 15$
+        </p>
+      </div>
+    </div>
+    <div class="new-arrival">
+      <div class="new-arrival-title">
+        <p>New arrivals</p>
+        <p>The newest season album</p>
+      </div>
+      <div class="new-arrival-product-container">
+        <div class="product">
+          <div class="product-image">
+            <div class="image-front">
+              <img src="/images/products/1front.png" alt="front">
+            </div>
+            <div class="image-back">
+              <img src="/images/products/1back.png" alt="back" />
+            </div>
+            <div class="button-group-list">
+              <a href="#" title="Quick View" >
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </a>
+              <a href="#" title="Wish List">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="product-name">
+              <p>Balo FS-01 Hologram | Black</p>
+            </div>
+            <div class="product-price">
+              <p class="old-price">$45.00</p>
+              <p class="sale-price">$35.00</p>
+            </div>
+            
+          </div>
+          <div class="add-cart-btn">
+            <button>
+              Add to cart
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <div class="image-front">
+              <img src="/images/products/2front.png" alt="front">
+            </div>
+            <div class="image-back">
+              <img src="/images/products/2back.png" alt="back" />
+            </div>
+            <div class="button-group-list">
+              <a href="#" title="Quick View" >
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </a>
+              <a href="#" title="Wish List">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="product-name">
+              <p>Balo FS-01 Hologram | Black</p>
+            </div>
+            <div class="product-price">
+              <p class="old-price">$45.00</p>
+              <p class="sale-price">$35.00</p>
+            </div>
+           
+          </div>
+          <div class="add-cart-btn">
+            <button>
+              Add to cart
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <div class="image-front">
+              <img src="/images/products/3front.png" alt="front">
+            </div>
+            <div class="image-back">
+              <img src="/images/products/3back.png" alt="back" />
+            </div>
+            <div class="button-group-list">
+              <a href="#" title="Quick View" >
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </a>
+              <a href="#" title="Wish List">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="product-name">
+              <p>Balo FS-01 Hologram | Black</p>
+            </div>
+            <div class="product-price">
+              <p class="old-price">$45.00</p>
+              <p class="sale-price">$35.00</p>
+            </div>
+            
+          </div>
+          <div class="add-cart-btn">
+            <button>
+              Add to cart
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <div class="image-front">
+              <img src="/images/products/4front.png" alt="front">
+            </div>
+            <div class="image-back">
+              <img src="/images/products/4back.png" alt="back" />
+            </div>
+            <div class="button-group-list">
+              <a href="#" title="Quick View" >
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </a>
+              <a href="#" title="Wish List">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="product-name">
+              <p>Balo FS-01 Hologram | Black</p>
+            </div>
+            <div class="product-price">
+              <p class="old-price">$45.00</p>
+              <p class="sale-price">$35.00</p>
+            </div>
+            
+          </div>
+          <div class="add-cart-btn">
+            <button>
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="show-more">
+        <a href="#">
+          <button>SHOW MORE</button>
+        </a>
+      </div>
+    </div>
+    <div class="new-era">
+      <div class="new-era-title">
+        <p>® The New Era</p>
+      </div>
+      <div class="new-era-image">
+        <a href="#" class="">
+          <img src="/images/banner_mtb_fcfeb26d1401423e9d5c39f7252c7b71.gif" alt="">
+          <span>Our products</span>
+        </a>
+        <a href="#" class="">
+          <img src="/images/ff__w.png" alt="">
+          <span>Our new album</span>
+
+        </a>
+      </div>
+    </div>
+    <div class="new-arrival">
+      <div class="new-arrival-title">
+        <p>Best seller</p>
+        <p>The best items that we bring to you</p>
+      </div>
+      <div class="new-arrival-product-container">
+        <div class="product">
+          <div class="product-image">
+            <div class="image-front">
+              <img src="/images/products/1front.png" alt="front">
+            </div>
+            <div class="image-back">
+              <img src="/images/products/1back.png" alt="back" />
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="product-name">
+              <p>Balo FS-01 Hologram | Black</p>
+            </div>
+            <div class="product-price">
+              <p class="old-price">$45.00</p>
+              <p class="sale-price">$35.00</p>
+            </div>
+          </div>
+          <div class="add-cart-btn">
+            <button>
+              Add to cart
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <div class="image-front">
+              <img src="/images/products/2front.png" alt="front">
+            </div>
+            <div class="image-back">
+              <img src="/images/products/2back.png" alt="back" />
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="product-name">
+              <p>Balo FS-01 Hologram | Black</p>
+            </div>
+            <div class="product-price">
+              <p class="old-price">$45.00</p>
+              <p class="sale-price">$35.00</p>
+            </div>
+          </div>
+          <div class="add-cart-btn">
+            <button>
+              Add to cart
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <div class="image-front">
+              <img src="/images/products/3front.png" alt="front">
+            </div>
+            <div class="image-back">
+              <img src="/images/products/3back.png" alt="back" />
+            </div>
+            <div class="button-group-list">
+              <a href="#" title="Quick View" >
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </a>
+              <a href="#" title="Wish List">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="product-name">
+              <p>Balo FS-01 Hologram | Black</p>
+            </div>
+            <div class="product-price">
+              <p class="old-price">$45.00</p>
+              <p class="sale-price">$35.00</p>
+            </div>
+            
+          </div>
+          <div class="add-cart-btn">
+            <button>
+              Add to cart
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <div class="image-front">
+              <img src="/images/products/4front.png" alt="front">
+            </div>
+            <div class="image-back">
+              <img src="/images/products/4back.png" alt="back" />
+            </div>
+            <div class="button-group-list">
+              <a href="#" title="Quick View" >
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+              </a>
+              <a href="#" title="Wish List">
+                <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="product-name">
+              <p>Balo FS-01 Hologram | Black</p>
+            </div>
+            <div class="product-price">
+              <p class="old-price">$45.00</p>
+              <p class="sale-price">$35.00</p>
+            </div>
+          </div>
+          <div class="add-cart-btn">
+            <button>
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="show-more">
+        <a href="#">
+          <button>SHOW MORE</button>
+        </a>
+      </div>
+    </div>
+    <div class="about-us">
+      <div class="about-us-image">
+        <a href="#">
+          <img src="/images/products/aboutus_bef4086557eb4cc9b4afa10f02283fd9.png" alt="">
+          <span>About us</span>
+        </a>
+
+      </div>
+      <div class="about-us-text">
+        <p>
+          Five years a journey, a hand, a youth bet.
+        </p>
+        <p>
+          Hello, my name is Anh. I was born on 5/5/1996. Currently Co-founder and owner of FUSIONISM.
+        </p>
+        <p>
+          I did not create it, but I gave up my youth, strength and spirit to build FUSIONISM. With wishes when you
+          enter the store. You will find shirts with stories that reflect your own mood. We don't just sell clothes, we
+          are where you find empathy
+        </p>
+        <p>
+          We have always thought that sadness is something extremely beautiful. If you don't have sadness, how can you
+          appreciate the happiness.
+        </p>
+        <p>
+          We hope that we will accompany you in long days of youth. A memory, a story, a memory and a sweet thing ...
+        </p>
+        <p>
+          Fusionism means unity. Someone came, someone went, someone stayed. These 5 years from loneliness I have found
+          companions with me. I do not know this path, this story I will go anywhere. Close it once and open it again.
+          There is success, there is failure. Hope you all will welcome us again ...
+        </p>
+      </div>
+    </div>
+    <div id="footer-included"></div>
+  </div>
+   <script src="index-1.js"></script>
+
+</body>
+
+</html>

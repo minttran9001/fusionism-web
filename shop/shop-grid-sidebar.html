@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shop</title>
+    <link href="../breadcrumbs.css" rel="stylesheet" />
+    <link href="./shop.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header-included").load("../../header/header.html");
+        $("#footer-included").load("../../footer/footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header-included"></div>
+    <div class="breadcrumbs">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-item">
+          <a href="#" class="breadcrumb-link">
+            <svg
+              class="svg"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#" class="breadcrumb-link is-active"> Shop </a>
+        </li>
+
+      </ul>
+    </div>
+    <div class="shop-section section">
+      <div class="shop-filter-sidebar">
+        <div class="close-filter">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="filter filter-category">
+          <div class="filter-title">
+            <p>Categories</p>
+          </div>
+          <ul class="filter-list">
+            <li class="filter-item">
+              <a href="#" class="filter-link"> Top </a>
+            </li>
+            <li class="filter-item">
+              <a href="#" class="filter-link"> Bottom </a>
+            </li>
+            <li class="filter-item">
+              <a href="#" class="filter-link"> Accessories </a>
+            </li>
+            <li class="filter-item">
+              <a href="#" class="filter-link"> Bags </a>
+            </li>
+          </ul>
+        </div>
+        <div class="filter filter-price">
+          <div class="filter-title">
+            <p>Price</p>
+          </div>
+          <div class="price-range">
+            <input
+              class="range-input"
+              id="range-input"
+              type="range"
+              min="range"
+              max="100"
+            />
+            <div class="selector" id="selector">
+              <div class="select-btn">
+                <svg
+                  class="svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <div class="price-selected" id="selected-value"></div>
+            </div>
+            <div class="price-progress" id="price-progress"></div>
+          </div>
+        </div>
+        <div class="filter filter-brand">
+          <div class="filter-title">
+            <p>Brand</p>
+          </div>
+          <div class="brand-item">
+            <input type="checkbox" />
+            <label>Fusionsm</label>
+          </div>
+          <div class="brand-item">
+            <input type="checkbox" />
+            <label>Fusionsm</label>
+          </div>
+          <div class="brand-item">
+            <input type="checkbox" />
+            <label>Fusionsm</label>
+          </div>
+          <div class="brand-item">
+            <input type="checkbox" />
+            <label>Fusionsm</label>
+          </div>
+        </div>
+        <div class="filter filter-color">
+          <div class="filter-title">
+            <p>Color</p>
+          </div>
+          <div class="brand-item">
+            <input type="checkbox" />
+            <label>Black</label>
+          </div>
+          <div class="brand-item">
+            <input type="checkbox" />
+            <label>White</label>
+          </div>
+          <div class="brand-item">
+            <input type="checkbox" />
+            <label>Blue</label>
+          </div>
+          <div class="brand-item">
+            <input type="checkbox" />
+            <label>Red</label>
+          </div>
+        </div>
+        <div class="filter filter-size">
+          <div class="filter-title">
+            <p>Size</p>
+          </div>
+          <div class="brand-item">
+            <input type="checkbox" />
+            <label>S</label>
+          </div>
+          <div class="brand-item">
+            <input type="checkbox" />
+            <label>M</label>
+          </div>
+          <div class="brand-item">
+            <input type="checkbox" />
+            <label>L</label>
+          </div>
+          <div class="brand-item">
+            <input type="checkbox" />
+            <label>XL</label>
+          </div>
+        </div>
+      </div>
+      <div class="products-list-grid">
+        <div class="top-bar">
+          <div class="top-bar-left">
+            <div class="type-view">
+              <svg
+                class="view-in view-in-grid is-active"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+                />
+              </svg>
+              <svg
+                class="view-in view-in-list"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="{2}"
+                  d="M4 6h16M4 10h16M4 14h16M4 18h16"
+                />
+              </svg>
+              <svg
+                class="view-in open-filter"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"
+                />
+              </svg>
+            </div>
+            <div class="product-amount">
+              <p>Showing 1–5 of 8 results</p>
+            </div>
+          </div>
+          <div class="top-bar-right">
+            <p class="title">Sort by</p>
+            <div class="sort-value">
+              <p>Relevance</p>
+              <svg
+                class="svg"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+            <div class="dropdown">
+              <ul class="drowdown-list">
+                <li class="dropdown-item">
+                  <a href="" class="dropdown-link"> Relevance </a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="" class="dropdown-link"> Relevance </a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="" class="dropdown-link"> Relevance </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="product-container product-grid-view">
+          <div class="product">
+            <div class="product-image">
+              <div class="image-front">
+                <img src="/images/products/1front.png" alt="front">
+              </div>
+              <div class="image-back">
+                <img src="/images/products/1back.png" alt="back" />
+              </div>
+              <div class="button-group-list">
+                <a href="#" title="Quick View" >
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </a>
+                <a href="#" title="Wish List">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="../product-details/product-details.html" class="product-name">
+                <p>Balo FS-01 Hologram | Black</p>
+              </a>
+              <div class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore laudantium dicta exercitationem magnam velit atque reprehenderit quidem dolorum sequi, aliquid ipsam, illum dolore maxime esse voluptatum voluptate eius. Animi, saepe.
+              </div>
+              <div class="product-price">
+                <p class="old-price">$45.00</p>
+                <p class="sale-price">$35.00</p>
+              </div>
+              <div class="button-group-list">
+                <a href="#" title="Quick View" >
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </a>
+                <a href="#" title="Wish List">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </a>
+              </div>
+              <div class="add-cart-btn in-list">
+                <button>
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="add-cart-btn">
+              <button>
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <div class="image-front">
+                <img src="/images/products/1front.png" alt="front">
+              </div>
+              <div class="image-back">
+                <img src="/images/products/1back.png" alt="back" />
+              </div>
+              <div class="button-group-list">
+                <a href="#" title="Quick View" >
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </a>
+                <a href="#" title="Wish List">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="../product-details/product-details.html" class="product-name">
+                <p>Balo FS-01 Hologram | Black</p>
+              </a>
+              <div class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore laudantium dicta exercitationem magnam velit atque reprehenderit quidem dolorum sequi, aliquid ipsam, illum dolore maxime esse voluptatum voluptate eius. Animi, saepe.
+              </div>
+              <div class="product-price">
+                <p class="old-price">$45.00</p>
+                <p class="sale-price">$35.00</p>
+              </div>
+              <div class="button-group-list">
+                <a href="#" title="Quick View" >
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </a>
+                <a href="#" title="Wish List">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </a>
+              </div>
+              <div class="add-cart-btn in-list">
+                <button>
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="add-cart-btn">
+              <button>
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <div class="image-front">
+                <img src="/images/products/1front.png" alt="front">
+              </div>
+              <div class="image-back">
+                <img src="/images/products/1back.png" alt="back" />
+              </div>
+              <div class="button-group-list">
+                <a href="#" title="Quick View" >
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </a>
+                <a href="#" title="Wish List">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="../product-details/product-details.html" class="product-name">
+                <p>Balo FS-01 Hologram | Black</p>
+              </a>
+              <div class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore laudantium dicta exercitationem magnam velit atque reprehenderit quidem dolorum sequi, aliquid ipsam, illum dolore maxime esse voluptatum voluptate eius. Animi, saepe.
+              </div>
+              <div class="product-price">
+                <p class="old-price">$45.00</p>
+                <p class="sale-price">$35.00</p>
+              </div>
+              <div class="button-group-list">
+                <a href="#" title="Quick View" >
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </a>
+                <a href="#" title="Wish List">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </a>
+              </div>
+              <div class="add-cart-btn in-list">
+                <button>
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="add-cart-btn">
+              <button>
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <div class="image-front">
+                <img src="/images/products/1front.png" alt="front">
+              </div>
+              <div class="image-back">
+                <img src="/images/products/1back.png" alt="back" />
+              </div>
+              <div class="button-group-list">
+                <a href="#" title="Quick View" >
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </a>
+                <a href="#" title="Wish List">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="../product-details/product-details.html" class="product-name">
+                <p>Balo FS-01 Hologram | Black</p>
+              </a>
+              <div class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore laudantium dicta exercitationem magnam velit atque reprehenderit quidem dolorum sequi, aliquid ipsam, illum dolore maxime esse voluptatum voluptate eius. Animi, saepe.
+              </div>
+              <div class="product-price">
+                <p class="old-price">$45.00</p>
+                <p class="sale-price">$35.00</p>
+              </div>
+              <div class="button-group-list">
+                <a href="#" title="Quick View" >
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </a>
+                <a href="#" title="Wish List">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </a>
+              </div>
+              <div class="add-cart-btn in-list">
+                <button>
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="add-cart-btn">
+              <button>
+                Add to cart
+              </button>
+            </div>
+          </div>
+          <div class="product">
+            <div class="product-image">
+              <div class="image-front">
+                <img src="/images/products/1front.png" alt="front">
+              </div>
+              <div class="image-back">
+                <img src="/images/products/1back.png" alt="back" />
+              </div>
+              <div class="button-group-list">
+                <a href="#" title="Quick View" >
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </a>
+                <a href="#" title="Wish List">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="product-details">
+              <a href="../product-details/product-details.html" class="product-name">
+                <p>Balo FS-01 Hologram | Black</p>
+              </a>
+              <div class="product-description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore laudantium dicta exercitationem magnam velit atque reprehenderit quidem dolorum sequi, aliquid ipsam, illum dolore maxime esse voluptatum voluptate eius. Animi, saepe.
+              </div>
+              <div class="product-price">
+                <p class="old-price">$45.00</p>
+                <p class="sale-price">$35.00</p>
+              </div>
+              <div class="button-group-list">
+                <a href="#" title="Quick View" >
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </a>
+                <a href="#" title="Wish List">
+                  <svg class="icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                  </svg>
+                </a>
+              </div>
+              <div class="add-cart-btn in-list">
+                <button>
+                  Add to cart
+                </button>
+              </div>
+            </div>
+            <div class="add-cart-btn">
+              <button>
+                Add to cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <ul class="pagination-list">
+            <li class="previous">
+              <a href="#"
+                ><span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M15 19l-7-7 7-7"
+                    /></svg></span
+              ></a>
+            </li>
+            <li class="page is-active">
+              <a href="">1</a>
+            </li>
+            <li class="page">
+              <a href="">2</a>
+            </li>
+            <li class="page">
+              <a href="">3</a>
+            </li>
+            <li class="next">
+              <a href="#">
+                <span
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M9 5l7 7-7 7"
+                    /></svg
+                ></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div id="footer-included"></div>
+    <script type="text/javascript" src="./shop-grid-sidebar.js"></script>
+  </body>
+</html>

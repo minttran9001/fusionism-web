@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Cart</title>
+    <link href="../breadcrumbs.css" rel="stylesheet" />
+    <link href="./cart.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $("#header-included").load("../../header/header.html");
+        $("#footer-included").load("../../footer/footer.html");
+      });
+    </script>
+  </head>
+  <body>
+    <div id="header-included"></div>
+    <div class="breadcrumbs">
+      <ul class="breadcrumb-list">
+        <li class="breadcrumb-item">
+          <a href="#" class="breadcrumb-link">
+            <svg
+              class="svg"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+          </a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#" class="breadcrumb-link is-active"> Cart </a>
+        </li>
+      </ul>
+    </div>
+    <div class="cart-section section">
+      <div class="cart-table-wrap">
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Thumbnail</th>
+              <th>Product</th>
+  
+              <th>Price</th>
+  
+              <th>Quantity</th>
+  
+              <th>Total</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a href="">
+                  <img src="../images/products/1front.png" alt="" />
+                </a>
+              </td>
+              <td>Jacket 1</td>
+              <td>$50.00</td>
+              <td class="quantity-row">
+                <div class="pro-qty">
+                  <span onclick="descrease(0)">-</span>
+                  <input class="input-qty" type="text" value="1" />
+                  <span onclick="inscrease(0)">+</span>
+                </div>
+              </td>
+              <td>$50.00</td>
+              <td><i class="far fa-trash-alt"></i></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="">
+                  <img src="../images/products/1front.png" alt="" />
+                </a>
+              </td>
+              <td>Jacket 1</td>
+              <td>$50.00</td>
+              <td class="quantity-row">
+                <div class="pro-qty">
+                  <span onclick="descrease(1)">-</span>
+                  <input class="input-qty" type="text" value="1" />
+                  <span onclick="inscrease(1)">+</span>
+                </div>
+              </td>
+              <td>$50.00</td>
+              <td><i class="far fa-trash-alt"></i></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="">
+                  <img src="../images/products/1front.png" alt="" />
+                </a>
+              </td>
+              <td>Jacket 1</td>
+              <td>$50.00</td>
+              <td class="quantity-row">
+                <div class="pro-qty">
+                  <span onclick="descrease(2)">-</span>
+                  <input class="input-qty" type="text" value="1" />
+                  <span onclick="inscrease(2)">+</span>
+                </div>
+              </td>
+              <td>$50.00</td>
+              <td><i class="far fa-trash-alt"></i></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="4">
+                <div class="input-wrap">
+                  <input placeholder="Coupon Code" type="text" />
+                  <div class="input-line"></div>
+                  <button>Apply</button>
+                </div>
+              </td>
+              <td colspan="2">
+                <button>Update Cart</button>
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div class="cart-summary">
+        <div class="summary-wrap">
+          <div class="summary-title">
+            <p>Cart Totals</p>
+          </div>
+          <div class="summary-prop">
+            <p>Sub Total</p>
+            <p>$230.00</p>
+          </div>
+          <div class="summary-prop">
+            <p>Shipping</p>
+            <p>$70.00</p>
+          </div>
+          <div class="summary-prop">
+            <p>Total</p>
+            <p>$300.00</p>
+          </div>
+          <a href="../checkout/checkout.html">
+            <button>Proceed To Checkout</button>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div id="footer-included"></div>
+
+    <script type="text/javascript" src="./cart.js"></script>
+  </body>
+</html>

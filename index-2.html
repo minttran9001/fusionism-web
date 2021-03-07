@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Home</title>
+  <link href="index.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+  </script>
+  <script>
+    $(function () {
+      $("#header-included").load("./header/header.html");
+      $("#footer-included").load("./footer/footer.html");
+
+    });
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <!---Nav bar section --->
+    <div id="header-included"></div>
+    <!-- End nav bar section -->
+
+    <!-- Hero section -->
+    <div class="slider-wrapper" >
+        <div class="slider-auto" id="slider-auto">
+            <div class="slide">
+                <div class="slide-image">
+                    <img src="/images/hmgoepprod (1).jpg" alt="">
+                </div>
+                <div class="slide-text">
+                    <p class="slide-heading">
+                        Regular recharged
+                    </p>
+                    <p class="slide-description">
+                        Same style, new perfected fit
+                    </p>
+                    <button class="slide-button">
+                        <a href="">Shop now</a>
+                    </button>
+                </div>
+            </div>
+            <div class="slide">
+              <div class="slide-image">
+                  <img src="/images/hmgoepprod (2).jpg" alt="">
+              </div>
+              <div class="slide-text">
+                  <p class="slide-heading">
+                      Regular recharged
+                  </p>
+                  <p class="slide-description">
+                      Same style, new perfected fit
+                  </p>
+                  <button class="slide-button">
+                      <a href="">Shop now</a>
+                  </button>
+              </div>
+          </div>
+          <div class="slide">
+              <div class="slide-image">
+                  <img src="/images/hmgoepprod.jpg" alt="">
+              </div>
+              <div class="slide-text">
+                  <p class="slide-heading">
+                      Regular recharged
+                  </p>
+                  <p class="slide-description">
+                      Same style, new perfected fit
+                  </p>
+                  <button class="slide-button">
+                      <a href="">Shop now</a>
+                  </button>
+              </div>
+          </div>
+     
+  </div>
+  <div class="swipe-slide">
+      <div onclick="chooseSlide(0)" class="circle is-active"></div>
+      <div onclick="chooseSlide(1)"  class="circle"></div>
+      <div onclick="chooseSlide(2)"  class="circle"></div>
+  </div>
+    </div>
+    <div class="service-policy">
+      <div class="policy">
+        <div class="policy-img">
+          <img src="./images/free_shipping.png" alt="">
+        </div>
+        <p class="policy-title">
+          FREE SHIPPING
+        </p>
+        <p class="policy-description">
+          Freeship for all order over $50
+        </p>
+      </div>
+      <div class="policy">
+        <div class="policy-img">
+          <img src="./images/support247.png" alt="">
+        </div>
+        <p class="policy-title">
+          SUPPORT 24 HOURS A DAY
+        </p>
+        <p class="policy-description">
+          We are always available for serving you
+        </p>
+      </div>
+      <div class="policy">
+        <div class="policy-img">
+          <img src="./images/money_back.png" alt="">
+        </div>
+        <p class="policy-title">
+          MONEY RETURN
+        </p>
+        <p class="policy-description">
+          You can return money in 30days
+        </p>
+      </div>
+      <div class="policy">
+        <div class="policy-img">
+          <img src="./images/promotions.png" alt="">
+        </div>
+        <p class="policy-title">
+          ORDER DISCOUNT
+        </p>
+        <p class="policy-description">
+          Discount all order over 15$
+        </p>
+      </div>
+    </div>
+    <div class="new-arrival">
+      <div class="new-arrival-title">
+        <p>New arrivals</p>
+        <p>The newest season album</p>
+      </div>
+      <div class="new-arrival-product-container">
+        <div class="product">
+          <div class="product-image">
+            <div class="image-front">
+              <img src="/images/products/1front.png" alt="front">
+            </div>
+            <div class="image-back">
+              <img src="/images/products/1back.png" alt="back" />
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="product-name">
+              <p>Balo FS-01 Hologram | Black</p>
+            </div>
+            <div class="product-price">
+              <p class="old-price">$45.00</p>
+              <p class="sale-price">$35.00</p>
+            </div>
+          </div>
+          <div class="add-cart-btn">
+            <button>
+              Add to cart
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <div class="image-front">
+              <img src="/images/products/2front.png" alt="front">
+            </div>
+            <div class="image-back">
+              <img src="/images/products/2back.png" alt="back" />
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="product-name">
+              <p>Balo FS-01 Hologram | Black</p>
+            </div>
+            <div class="product-price">
+              <p class="old-price">$45.00</p>
+              <p class="sale-price">$35.00</p>
+            </div>
+          </div>
+          <div class="add-cart-btn">
+            <button>
+              Add to cart
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <div class="image-front">
+              <img src="/images/products/3front.png" alt="front">
+            </div>
+            <div class="image-back">
+              <img src="/images/products/3back.png" alt="back" />
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="product-name">
+              <p>Balo FS-01 Hologram | Black</p>
+            </div>
+            <div class="product-price">
+              <p class="old-price">$45.00</p>
+              <p class="sale-price">$35.00</p>
+            </div>
+          </div>
+          <div class="add-cart-btn">
+            <button>
+              Add to cart
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <div class="image-front">
+              <img src="/images/products/4front.png" alt="front">
+            </div>
+            <div class="image-back">
+              <img src="/images/products/4back.png" alt="back" />
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="product-name">
+              <p>Balo FS-01 Hologram | Black</p>
+            </div>
+            <div class="product-price">
+              <p class="old-price">$45.00</p>
+              <p class="sale-price">$35.00</p>
+            </div>
+          </div>
+          <div class="add-cart-btn">
+            <button>
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="show-more">
+        <a href="#">
+          <button>SHOW MORE</button>
+        </a>
+      </div>
+    </div>
+    <div class="new-era">
+      <div class="new-era-title">
+        <p>® The New Era</p>
+      </div>
+      <div class="new-era-image">
+        <a href="#" class="">
+          <img src="/images/banner_mtb_fcfeb26d1401423e9d5c39f7252c7b71.gif" alt="">
+          <span>Our products</span>
+        </a>
+        <a href="#" class="">
+          <img src="/images/ff__w.png" alt="">
+          <span>Our new album</span>
+
+        </a>
+      </div>
+    </div>
+    <div class="new-arrival">
+      <div class="new-arrival-title">
+        <p>Best seller</p>
+        <p>The best items that we bring to you</p>
+      </div>
+      <div class="new-arrival-product-container">
+        <div class="product">
+          <div class="product-image">
+            <div class="image-front">
+              <img src="/images/products/1front.png" alt="front">
+            </div>
+            <div class="image-back">
+              <img src="/images/products/1back.png" alt="back" />
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="product-name">
+              <p>Balo FS-01 Hologram | Black</p>
+            </div>
+            <div class="product-price">
+              <p class="old-price">$45.00</p>
+              <p class="sale-price">$35.00</p>
+            </div>
+          </div>
+          <div class="add-cart-btn">
+            <button>
+              Add to cart
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <div class="image-front">
+              <img src="/images/products/2front.png" alt="front">
+            </div>
+            <div class="image-back">
+              <img src="/images/products/2back.png" alt="back" />
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="product-name">
+              <p>Balo FS-01 Hologram | Black</p>
+            </div>
+            <div class="product-price">
+              <p class="old-price">$45.00</p>
+              <p class="sale-price">$35.00</p>
+            </div>
+          </div>
+          <div class="add-cart-btn">
+            <button>
+              Add to cart
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <div class="image-front">
+              <img src="/images/products/3front.png" alt="front">
+            </div>
+            <div class="image-back">
+              <img src="/images/products/3back.png" alt="back" />
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="product-name">
+              <p>Balo FS-01 Hologram | Black</p>
+            </div>
+            <div class="product-price">
+              <p class="old-price">$45.00</p>
+              <p class="sale-price">$35.00</p>
+            </div>
+          </div>
+          <div class="add-cart-btn">
+            <button>
+              Add to cart
+            </button>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-image">
+            <div class="image-front">
+              <img src="/images/products/4front.png" alt="front">
+            </div>
+            <div class="image-back">
+              <img src="/images/products/4back.png" alt="back" />
+            </div>
+          </div>
+          <div class="product-details">
+            <div class="product-name">
+              <p>Balo FS-01 Hologram | Black</p>
+            </div>
+            <div class="product-price">
+              <p class="old-price">$45.00</p>
+              <p class="sale-price">$35.00</p>
+            </div>
+          </div>
+          <div class="add-cart-btn">
+            <button>
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="show-more">
+        <a href="#">
+          <button>SHOW MORE</button>
+        </a>
+      </div>
+    </div>
+    <div class="about-us">
+      <div class="about-us-image">
+        <a href="#">
+          <img src="/images/products/aboutus_bef4086557eb4cc9b4afa10f02283fd9.png" alt="">
+          <span>About us</span>
+        </a>
+
+      </div>
+      <div class="about-us-text">
+        <p>
+          Five years a journey, a hand, a youth bet.
+        </p>
+        <p>
+          Hello, my name is Anh. I was born on 5/5/1996. Currently Co-founder and owner of FUSIONISM.
+        </p>
+        <p>
+          I did not create it, but I gave up my youth, strength and spirit to build FUSIONISM. With wishes when you
+          enter the store. You will find shirts with stories that reflect your own mood. We don't just sell clothes, we
+          are where you find empathy
+        </p>
+        <p>
+          We have always thought that sadness is something extremely beautiful. If you don't have sadness, how can you
+          appreciate the happiness.
+        </p>
+        <p>
+          We hope that we will accompany you in long days of youth. A memory, a story, a memory and a sweet thing ...
+        </p>
+        <p>
+          Fusionism means unity. Someone came, someone went, someone stayed. These 5 years from loneliness I have found
+          companions with me. I do not know this path, this story I will go anywhere. Close it once and open it again.
+          There is success, there is failure. Hope you all will welcome us again ...
+        </p>
+      </div>
+    </div>
+    <div id="footer-included"></div>
+  </div>
+  <script src="index-2.js"></script>
+
+</body>
+
+</html>
